@@ -1,0 +1,122 @@
+/* Animasi masuk */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animasi keluar */
+@keyframes fadeOutDown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+/* Kelas animasi */
+.animate__fadeInUp {
+    animation: fadeInUp 0.3s ease-in-out;
+}
+
+.animate__fadeOutDown {
+    animation: fadeOutDown 0.3s ease-in-out;
+}
+
+/* Container utama */
+#appStyle {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.header h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input pencarian */
+.seacrch {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.seacrch input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+/* Hasil pencarian */
+.result-search {
+    margin-top: 20px;
+    display: none;
+}
+
+.result-search.active {
+    display: block;
+}
+
+/* Kartu hasil */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Tombol hasil */
+.btn-word, .btn-sentence {
+    font-size: 14px;
+    padding: 5px 10px;
+    margin: 5px;
+    border: 1px solid #28a745;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #28a745;
+    cursor: pointer;
+}
+
+.btn-word.active, .btn-sentence.active {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Informasi tambahan */
+#information img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#information video {
+    width: 100%;
+    border-radius: 5px;
+}
